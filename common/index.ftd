@@ -1,0 +1,66 @@
+
+
+
+
+
+
+-- record social-media:
+ftd.image-src src:
+string link: /
+
+-- social-media list share:
+
+-- social-media list social-links:
+
+-- social-media:
+link: /
+src: $assets.files.assets.fb.png
+
+-- social-media: 
+link: /
+src: $assets.files.assets.figma.png
+
+-- social-media:
+link: /
+src: $assets.files.assets.google.png
+
+-- social-media: 
+link: /
+src: $assets.files.assets.chat.png
+
+-- social-media: 
+link: /
+src: $assets.files.assets.social.png
+
+-- end: social-links
+
+
+
+-- record record-feature:
+caption title:
+
+
+-- record-feature list features:
+
+-- record-feature: Peformance-based budgeting.
+
+-- record-feature: Dynamic Resource Allocation.
+
+-- end: features
+
+
+-- record-feature list template-features:
+
+-- record-feature: Image Ads.
+
+-- record-feature: Video Ads.
+
+-- record-feature: Story Ads.
+
+-- record-feature: Interactive Ads.
+
+-- end: template-features
+
+
+
+-- integer max-width: 1320
