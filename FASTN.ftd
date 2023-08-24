@@ -11,9 +11,6 @@ favicon: /-/fastn-community.github.io/webify-theme/favicon.ico
 -- fastn.auto-import: fastn-community.github.io/webify-theme/FASTN/ws
 -- fastn.auto-import: fastn-community.github.io/webify-theme/assets
 -- fastn.auto-import: fastn-community.github.io/webify-theme/common
--- fastn.auto-import: doc-site
--- fastn.auto-import: typo
--- fastn.auto-import: cs
 
 -- fastn.sitemap:
 

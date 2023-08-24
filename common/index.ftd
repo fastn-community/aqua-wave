@@ -6,7 +6,7 @@
 
 -- boolean show-footer: true
 
--- ftd.image-src site-logo: $assets.files.static.ipsum-logo.svg
+-- ftd.image-src site-logo: $assets.files.assets.ipsum-logo.svg
 
 -- integer logo-width: 180
 
@@ -43,23 +43,23 @@ string link: /
 
 -- social-media:
 link: /
-src: $assets.files.static.fb.png
+src: $assets.files.assets.fb.png
 
 -- social-media: 
 link: /
-src: $assets.files.static.figma.png
+src: $assets.files.assets.figma.png
 
 -- social-media:
 link: /
-src: $assets.files.static.google.png
+src: $assets.files.assets.google.png
 
 -- social-media: 
 link: /
-src: $assets.files.static.chat.png
+src: $assets.files.assets.chat.png
 
 -- social-media: 
 link: /
-src: $assets.files.static.social.png
+src: $assets.files.assets.social.png
 
 -- end: social-links
 
@@ -219,7 +219,7 @@ optional integer index:
 -- testimonial: "Ads performance increased - Our budget didn't"
 user: Patrica AVA
 designation: UI Designer
-avatar: $assets.files.static.avatar.svg
+avatar: $assets.files.assets.avatar.svg
 index: 1
 
 A design approach is a general philosophy that may or may not include a guide
@@ -229,7 +229,7 @@ be distracted by the readable content of a page when looking at its layout.
 -- testimonial: Fastn is power
 user: Meenu
 designation: Fastn Builder
-avatar: $assets.files.static.avatar.svg
+avatar: $assets.files.assets.avatar.svg
 index: 2
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie ante
@@ -240,7 +240,7 @@ aliquet faucibus.
 -- testimonial: Fastn is best
 user: Priyanka
 designation: Fastn Builder
-avatar: $assets.files.static.avatar.svg
+avatar: $assets.files.assets.avatar.svg
 index: 3
 
 Nam lacinia nisi sed mauris luctus, id vestibulum enim luctus. Integer iaculis
