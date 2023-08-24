@@ -15,3 +15,7 @@ favicon: /-/fastn-community.github.io/webify-theme/favicon.ico
 -- fastn.sitemap:
 
 # Home: index.html
+
+# Pricing: /pricing/
+
+# About: /about/

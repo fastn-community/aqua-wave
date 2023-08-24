@@ -6,98 +6,108 @@ export: markdown, h0, h1, h2, h3
 
 -- ws.page:
 
-;; -- ws.page.body:
+-- ws.page.body:
 
-;; -- ws.hero-bottom-hug: Build, manage and deliver ads on every platform with clics.
-;; tag: Unlimited Audience, One Place
-;; primary-cta: Learn More
-;; primary-cta-link: index.html
-;; image: $assets.files.assets.hero-image.jpg
+-- ws.hero-bottom-hug: Build, manage and deliver ads on every platform with clics.
+tag: Unlimited Audience, One Place
+primary-cta: Learn More
+primary-cta-link: index.html
+image: $assets.files.assets.hero-image.jpg
 
-;; I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click 
-;; “Edit Text” or double click me to add your own content and make changes to the font. 
+I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click 
+“Edit Text” or double click me to add your own content and make changes to the font. 
 
+-- ws.hero-bottom-hug-expanded: Meet clics all-in-one solution for efficient marketers
+tag: How it Works
+label: A one-stop shop that delivers your ads across all platforms
+primary-cta: Learn More
+primary-cta-link: index.html
+image: $assets.files.assets.hero-image.jpg
 
-;; -- ws.hero-left-hug-expanded: Easy Setup
-;; tag: Set it up once, and you're good to go. No hassle or code required.
-;; image: $assets.files.assets.hero-image.jpg
-;; primary-cta: Book a Demo
-;; primary-cta-link: index.html
-
-;; I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you 
-;; to tell a story and let your users know a little more about you.
-
-
-;; -- ws.hero-bottom-hug: From API integrations to powerful analytics - clics has it all.
-;; tag: Features
-;; primary-cta: Learn More
-;; primary-cta-link: index.html
-;; image: $assets.files.assets.hero-image.jpg
-
-;; I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click 
-;; “Edit Text” or double click me to add your own content and make changes to the font. 
-;; I’m a great place for you to tell a story and let your users know a little more about you. 
+I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you 
+to tell a story and let your users know a little more about you.
 
 
-;; -- ws.hero-right-hug-list: Smart budgeting
-;; primary-cta: Book a Demo
-;; primary-cta-link: index.html
-;; image: $assets.files.assets.hero-image.jpg
-;; features: $common.features
+-- ws.hero-left-hug-expanded: Easy Setup
+tag: Set it up once, and you're good to go. No hassle or code required.
+image: $assets.files.assets.hero-image.jpg
+primary-cta: Book a Demo
+primary-cta-link: index.html
 
-;; With clics' budgeting system, you can rest assured your resources are spent wisely.
-
-
-;; -- ws.hero-left-hug-list: Smart budgeting
-;; primary-cta: Book a Demo
-;; primary-cta-link: index.html
-;; image: $assets.files.assets.hero-image.jpg
-;; features: $common.template-features
-
-;; With clics' budgeting system, you can rest assured your resources are spent wisely.
-
-;; -- ws.articles: Resources
-;; primary-cta: All Resources
-
-;; The Latest from clics
-
-;; -- ws.article: How to Build a Brand
-;; src: $assets.files.assets.article-image.jpg
-
-;; Create a blog post subtitle that summarizes your post in a few short,
-;; punchy sentences and entices your audience to continue reading.
-
-;; -- ws.article: How to Build a Brand
-;; src: $assets.files.assets.article-image.jpg
-
-;; Create a blog post subtitle that summarizes your post in a few short,
-;; punchy sentences and entices your audience to continue reading.
-
-;; -- ws.article: How to Build a Brand
-;; src: $assets.files.assets.article-image.jpg
-
-;; Create a blog post subtitle that summarizes your post in a few short,
-;; punchy sentences and entices your audience to continue reading.
-
-;; -- end: ws.articles
-
-;; -- ws.testimonials: Testimonials
-
-;; Why Companies Like Click?
-
-;; -- ws.testimonials-card:
-;; testimonials: $common.list-of-testimonials
-;; nav: $common.navs
-
-;; -- end: ws.testimonials-card
+I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you 
+to tell a story and let your users know a little more about you.
 
 
-;; -- end: ws.testimonials
+-- ws.hero-right-hug-list: Smart budgeting
+primary-cta: Book a Demo
+primary-cta-link: index.html
+image: $assets.files.assets.hero-image.jpg
+features: $common.features
 
-;; -- ws.search-card: Subscribe to our newsletter to get all the updates and news about clics.
-;; input-label: Enter Your Email here *
-;; primary-cta: Subscribe
-;; primary-cta-link: index.html
+With clics' budgeting system, you can rest assured your resources are spent wisely.
+
+
+-- ws.hero-left-hug-list: Smart budgeting
+primary-cta: Book a Demo
+primary-cta-link: index.html
+image: $assets.files.assets.hero-image.jpg
+features: $common.template-features
+
+With clics' budgeting system, you can rest assured your resources are spent wisely.
+
+-- ws.hero-bottom-hug: From API integrations to powerful analytics - clics has it all.
+tag: Features
+primary-cta: Learn More
+primary-cta-link: index.html
+image: $assets.files.assets.hero-image.jpg
+
+I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click 
+“Edit Text” or double click me to add your own content and make changes to the font. 
+I’m a great place for you to tell a story and let your users know a little more about you.
+
+
+-- ws.articles: Resources
+primary-cta: All Resources
+
+The Latest from clics
+
+-- ws.blog: How to Build a Brand
+src: $assets.files.assets.article-image.jpg
+
+Create a blog post subtitle that summarizes your post in a few short,
+punchy sentences and entices your audience to continue reading.
+
+-- ws.blog: How to Build a Brand
+src: $assets.files.assets.article-image.jpg
+
+Create a blog post subtitle that summarizes your post in a few short,
+punchy sentences and entices your audience to continue reading.
+
+-- ws.blog: How to Build a Brand
+src: $assets.files.assets.article-image.jpg
+
+Create a blog post subtitle that summarizes your post in a few short,
+punchy sentences and entices your audience to continue reading.
+
+-- end: ws.articles
+
+-- ws.testimonials: Our Clients
+
+Why Companies Like Click?
+
+-- ws.testimonials-card:
+testimonials: $common.list-of-testimonials
+nav: $common.navs
+
+-- end: ws.testimonials-card
+
+
+-- end: ws.testimonials
+
+-- ws.search-card: Subscribe to our newsletter to get all the updates and news about clics.
+input-label: Enter Your Email here *
+primary-cta: Subscribe
+primary-cta-link: index.html
 
 -- end: ws.page
 
@@ -585,7 +595,7 @@ text-align: center
 
 -- ftd.text: $hero-bottom-hug.title
 role: $inherited.types.heading-hero
-max-width.fixed.percent: 70
+max-width.fixed.percent: 45
 margin-top.px: 24
 text-align: center
 
@@ -874,7 +884,7 @@ cta-link: $hero-left-hug-expanded.primary-cta-link
 
 
 
--- component article:
+-- component blog:
 caption title:
 body body:
 ftd.image-src src:
@@ -884,7 +894,7 @@ width.fixed.px: 286
 border-width.px: 1
 
 -- ftd.image: 
-src: $article.src
+src: $blog.src
 width: fill-container
 height.fixed.px: 222
 
@@ -894,7 +904,7 @@ padding-horizontal.px: 16
 padding-bottom.px: 25
 color: $inherited.colors.text
 
--- ftd.text: $article.title
+-- ftd.text: $blog.title
 role: $inherited.types.heading-small
 
 -- ftd.text:
@@ -902,13 +912,13 @@ role: $inherited.types.copy-small
 margin-top.px: 8
 margin-bottom.px: 16
 
-$article.body
+$blog.body
 
 -- end: ftd.column
 
 -- end: ftd.column
 
--- end: article
+-- end: blog
 
 
 
@@ -1386,16 +1396,18 @@ if: { search-card.image != NULL }
 src: $search-card.image
 
 -- ftd.text: $search-card.title
-max-width.fixed.px: 800
 role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
+max-width.fixed.percent: 45
 margin-top.px: 40
 text-align: center
+
+-- ftd.column:
+margin-top.px: 24
 
 -- ftd.text: $search-card.input-label
 color: $inherited.colors.text
 role: $inherited.types.copy-regular
-margin-top.px: 24
 
 -- ftd.row:
 width.fixed.px: 730
@@ -1427,6 +1439,8 @@ text-align: center
 white-space: nowrap
 
 -- end: ftd.row
+
+-- end: ftd.column
 
 -- end: ftd.column
 
@@ -1684,7 +1698,6 @@ wrap: true
 -- ftd.column:
 width.fixed.percent: 50
 color: $inherited.colors.text
-align-content: center
 
 -- ftd.text: $testimonials.title
 if: { testimonials.title != NULL }
@@ -1693,7 +1706,9 @@ style: bold
 
 -- ftd.text:
 if: { testimonials.body != NULL }
-role: $inherited.types.heading-medium
+role: $inherited.types.heading-large
+max-width.fixed.percent: 50
+margin-top.px: 40
 style: bold
 
 $testimonials.body
@@ -2387,7 +2402,7 @@ color: $inherited.colors.text
 -- ftd.text: $footer-badge.cta-text-1
 role: $inherited.types.copy-small
 color: $inherited.colors.text
-$on-click$: $ftd.set-bool($a = $common.common.tc-pop-up-status, v = true)
+$on-click$: $ftd.set-bool($a = $common.tc-pop-up-status, v = true)
 
 -- ftd.image:
 src: $assets.files.assets.fastn-badge-white.svg
@@ -5197,3 +5212,83 @@ $image.body
 -- end: ftd.column
 
 -- end: image
+
+
+
+
+
+
+
+
+
+
+-- component hero-bottom-hug-expanded:
+caption title:
+optional body body:
+optional string tag:
+optional string label:
+ftd.image-src image:
+optional string primary-cta:
+string primary-cta-link: index.html
+ftd.image-src primary-cta-icon: $assets.files.assets.check-solid.svg
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding-vertical.px: 100
+
+-- ftd.column:
+width: fill-container
+color: $inherited.colors.text
+align-content: center
+
+-- ftd.text: $hero-bottom-hug-expanded.tag
+if: { hero-bottom-hug-expanded.tag != NULL }
+role: $inherited.types.heading-small
+color: $inherited.colors.text-strong
+text-align: center
+
+-- ftd.text: $hero-bottom-hug-expanded.title
+role: $inherited.types.heading-hero
+max-width.fixed.percent: 45
+margin-top.px: 24
+text-align: center
+
+-- ftd.text: $hero-bottom-hug-expanded.label
+if: { hero-bottom-hug-expanded.label != NULL}
+role: $inherited.types.copy-large
+max-width.fixed.percent: 45
+margin-top.px: 24
+text-align: center
+
+-- ftd.image:
+width: fill-container
+max-width.fixed.px: 1320
+height.fixed.px: 680
+src: $hero-bottom-hug-expanded.image
+margin-top.px: 45
+
+-- ftd.text:
+if: { hero-bottom-hug-expanded.body != NULL }
+role: $inherited.types.copy-large
+max-width.fixed.percent: 40
+text-align: center
+margin-top.px: 48
+
+$hero-bottom-hug-expanded.body
+
+-- ftd.row:
+spacing.fixed.px: 12
+margin-top.px: 50
+
+-- button-lg: $hero-bottom-hug-expanded.primary-cta
+if: { hero-bottom-hug-expanded.primary-cta != NULL }
+cta-link: $hero-bottom-hug-expanded.primary-cta-link
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: hero-bottom-hug-expanded
