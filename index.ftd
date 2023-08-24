@@ -137,7 +137,7 @@ optional pr.toc-item current-section: $common.sitemap.current-section
 optional pr.toc-item current-subsection: $common.sitemap.current-subsection
 optional pr.toc-item current-page: $common.sitemap.current-page
 children wrapper:
-ftd.type-data types: $typo.types
+ftd.type-data types: $ftd.default-types
 ftd.color-scheme colors: $ftd.default-colors
 ftd.ui list right-sidebar:
 boolean sidebar: false
@@ -171,7 +171,7 @@ if: { page.show-banner }
 width: fill-container
 children: $page.banner
 align-content: center
-max-width.fixed.px: $common.max-width
+;;max-width.fixed.px: $common.max-width
 
 -- end: ftd.column
 
@@ -235,12 +235,12 @@ if: { page.show-footer }
 width: fill-container
 children: $page.footer
 align-self: center
-max-width.fixed.px: $common.max-width
+;;max-width.fixed.px: $common.max-width
 
 -- end: ftd.column
 
 -- ftd.column:
-if: { common.common.tc-pop-up-status }
+if: { common.tc-pop-up-status }
 width: fill-container
 children: $page.popup
 align-self: center
@@ -522,6 +522,7 @@ padding-horizontal.px: 24
 -- end: ftd.column
 
 -- end: doc-page-mobile
+
 
 
 
@@ -2455,3 +2456,289 @@ width.fixed.px: 140
 -- end: ftd.column
 
 -- end: footer-badge
+
+
+
+
+
+
+
+
+
+
+-- component tc-popup: 
+caption title:
+string head:
+body body:
+children c:
+
+-- ftd.column:
+if: { common.tc-pop-up-status }
+anchor: window
+width: fill-container
+height.fixed.percent: 100
+background.solid: #000000ba
+z-index: 99999
+
+-- ftd.column:
+if: {ftd.device == "desktop"}
+width: fill-container
+height: fill-container
+align-content: center
+
+-- ftd.column:  
+width.fixed.percent: 70
+border-width.px: 1
+border-radius.px: 8
+border-color: $inherited.colors.border
+background.solid: $inherited.colors.background.base
+height.fixed.percent: 80
+overflow-y: hidden
+padding-bottom.px: 96
+
+-- ftd.row:
+align-self: end
+
+-- ftd.image:
+margin-right.px: 16
+margin-top.px: 16
+src: $assets.files.assets.cross.svg
+width.fixed.px: 24
+height.fixed.px: 24
+$on-click$: $ftd.set-bool($a = $common.tc-pop-up-status, v = false)
+
+-- end: ftd.row
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+align-content: left
+padding-horizontal.px: 24
+
+-- ftd.text: $tc-popup.title
+role: $inherited.types.heading-tiny
+width: fill-container
+style: bold
+text-align: center
+color: $inherited.colors.text
+margin-bottom.px: 8
+
+-- ftd.text: $tc-popup.head
+role: $inherited.types.copy-regular
+width: fill-container
+text-align: center
+style: bold
+color: $inherited.colors.text
+margin-bottom.px: 8
+
+-- ftd.column:
+width: fill-container
+css: [ $assets.files.assets.scroll.css ]
+classes: body
+padding-vertical.px: 48
+padding-horizontal.px: 48
+
+-- ftd.text: 
+role: $inherited.types.copy-small
+width: fill-container
+color: $inherited.colors.text
+text-align: justify
+
+$tc-popup.body
+
+-- ftd.column:
+width: fill-container
+children: $tc-popup.c
+spacing.fixed.px: 16
+margin-bottom.px: 48
+
+-- end: ftd.column
+
+-- end: ftd.column
+           
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.mobile:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+background.solid: $inherited.colors.background.base
+height: fill-container
+
+-- ftd.column:  
+width.fixed.percent: 90
+border-width.px: 1
+border-radius.px: 8
+border-color: $inherited.colors.border
+align-self: center
+height.fixed.percent: 90
+overflow-y: hidden
+padding-bottom.px: 96
+
+-- ftd.row:
+align-content: right
+align-self: end
+
+-- ftd.image:
+margin-right.px: 8
+margin-top.px: 8
+src: $assets.files.assets.cross.svg 
+height.fixed.px: 24
+$on-click$: $ftd.set-bool($a = $common.tc-pop-up-status, v = false)
+
+-- end: ftd.row
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+align-content: center
+
+-- ftd.text: $tc-popup.title
+role: $inherited.types.heading-tiny
+width: fill-container
+style: bold
+text-align: center
+color: $inherited.colors.text
+margin-bottom.px: 8
+
+-- ftd.text: $tc-popup.head
+role: $inherited.types.copy-regular
+width: fill-container
+text-align: center
+style: bold
+color: $inherited.colors.text
+margin-bottom.px: 8
+
+-- ftd.column:
+width: fill-container
+css: [ $assets.files.assets.scroll.css ]
+classes: body
+padding-vertical.px: 48
+padding-horizontal.px: 48
+
+-- ftd.text: 
+role: $inherited.types.copy-small
+width: fill-container
+color: $inherited.colors.text
+text-align: justify
+
+$tc-popup.body
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+margin-bottom.px: 8
+children: $tc-popup.c
+spacing.fixed.px: 16
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+           
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.mobile
+
+-- end: ftd.column
+
+-- end: tc-popup
+
+
+
+
+
+
+
+
+
+
+-- component tc-item:
+string number:
+caption heading:
+body content:
+
+-- ftd.column:
+width: fill-container
+margin-vertical.px: 8
+
+-- ftd.row: 
+width: fill-container
+spacing.fixed.px: 4
+
+-- ftd.text: $tc-item.number
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+style: bold
+
+-- ftd.text: $tc-item.heading
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- ftd.text: 
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+margin-left.px: 8
+text-align: justify
+
+$tc-item.content
+
+-- end: ftd.column
+
+-- end: tc-item
+
+
+
+
+
+
+
+
+
+
+-- component tc-item-item:
+string number:
+caption heading:
+body content:
+
+-- ftd.column:
+width: fill-container
+margin-left.px: 8
+margin-vertical.px: 8
+
+-- ftd.row: 
+width: fill-container
+spacing.fixed.px: 4
+
+-- ftd.text: $tc-item-item.number
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+style: bold
+
+-- ftd.text: $tc-item-item.heading
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- ftd.text: 
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+margin-left.px: 8
+text-align: justify
+
+$tc-item-item.content
+
+-- end: ftd.column
+
+-- end: tc-item-item
