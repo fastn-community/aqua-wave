@@ -120,6 +120,7 @@ nav: $common.navs
 
 -- ws.search-card: Subscribe to our newsletter to get all the updates and news about clics.
 input-label: Enter Your Email here *
+image: $assets.files.assets.mail.png
 primary-cta: Subscribe
 primary-cta-link: index.html
 
@@ -854,35 +855,6 @@ width.fixed.px: 14
 
 
 
--- component bullet-point:
-caption title:
-ftd.image-src list-icon: $assets.files.assets.check-solid.svg
-
--- ftd.row:
-spacing.fixed.px: 12
-
--- ftd.image:
-src: $bullet-point.list-icon
-width.fixed.px: 22
-height.fixed.px: 22
-
--- ftd.text: $bullet-point.title
-color: $inherited.colors.text
-role: $inherited.types.copy-regular
-
--- end: ftd.row
-
--- end: bullet-point
-
-
-
-
-
-
-
-
-
-
 -- component button-solid:
 caption title:
 string cta-link:
@@ -1144,7 +1116,7 @@ string primary-cta:
 string primary-cta-link:
 optional string input-placeholder: Enter your work email...
 optional body body:
-optional ftd.image-src image: $assets.files.assets.mail.svg
+optional ftd.image-src image: $assets.files.assets.mail.png
 string id: search-card
 
 -- ftd.column:
