@@ -1,0 +1,30 @@
+-- ws.pricing: PRICING PLANS
+
+-- ws.pricing-plan: BASIC
+price: 9
+primary-cta: Get Started
+primary-cta-link: index.html/pricing
+plan: $common.basic-plan
+tag: Best for small teams
+label: Most Popular
+plan-validity: Valid for 12 month
+
+-- ws.pricing-plan: STANDARD
+price: 39
+primary-cta: Get Started
+primary-cta-link: index.html/pricing
+plan: $common.standard-plan
+tag: Best for small teams
+label: Most Popular
+plan-validity: Valid for 12 month
+
+-- ws.pricing-plan: PROFESSIONAL
+price: 99
+primary-cta: Get Started
+primary-cta-link: index.html/pricing
+plan: $common.professional-plan
+tag: Best for small teams
+label: Most Popular
+plan-validity: Valid for 12 month
+
+-- end: ws.pricing

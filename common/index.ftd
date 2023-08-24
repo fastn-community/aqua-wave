@@ -1,8 +1,37 @@
+-- import: fastn/processors as pr
 
+-- string site-name: Fastn
 
+-- boolean $tc-pop-up-status: false
 
+-- boolean show-footer: true
 
+-- ftd.image-src site-logo: $assets.files.static.ipsum-logo.svg
 
+-- integer logo-width: 180
+
+-- integer $current-slide: 1
+
+-- integer logo-height: 44
+
+-- string site-url: index.html
+
+-- boolean login-button: false
+
+-- integer max-width: 1320
+
+-- pr.sitemap-data sitemap:
+$processor$: pr.sitemap
+
+-- pr.sitemap-data footer-toc:
+$processor$: pr.full-sitemap
+
+-- fastn.app-ui apps:
+$processor$: pr.fastn-apps
+
+-- ftd.image-src fastn-logo:
+light: https://fastn.com/-/fastn.com/images/fastn.svg
+dark: https://fastn.com/-/fastn.com/images/fastn-dark.svg
 
 -- record social-media:
 ftd.image-src src:
@@ -14,25 +43,52 @@ string link: /
 
 -- social-media:
 link: /
-src: $assets.files.assets.fb.png
+src: $assets.files.static.fb.png
 
 -- social-media: 
 link: /
-src: $assets.files.assets.figma.png
+src: $assets.files.static.figma.png
 
 -- social-media:
 link: /
-src: $assets.files.assets.google.png
+src: $assets.files.static.google.png
 
 -- social-media: 
 link: /
-src: $assets.files.assets.chat.png
+src: $assets.files.static.chat.png
 
 -- social-media: 
 link: /
-src: $assets.files.assets.social.png
+src: $assets.files.static.social.png
 
 -- end: social-links
+
+-- pr.toc-item list empty-toc:
+$processor$: pr.toc
+
+-- pr.toc-item list footer-links:
+$processor$: pr.toc
+
+- HEADING: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+- HEADING: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+- HEADING: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+- HEADING: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+  - Footer Link 01: /
+  - Footer Link 01: /
 
 
 
@@ -64,3 +120,135 @@ caption title:
 
 
 -- integer max-width: 1320
+
+
+
+
+-- record testimonial-nav:
+integer index: 1
+boolean active: false
+
+-- testimonial-nav list navs:
+
+-- testimonial-nav:
+active: true
+index: 1
+
+-- testimonial-nav:
+index: 2
+
+-- testimonial-nav:
+index: 3
+
+-- end: navs
+
+
+-- record testimonial:
+caption title:
+string user: 
+string designation:
+ftd.image-src avatar:
+body body:
+optional integer index:
+
+
+
+-- testimonial list list-of-testimonials:
+
+-- testimonial: "Ads performance increased - Our budget didn't"
+user: Patrica AVA
+designation: UI Designer
+avatar: $assets.files.static.avatar.svg
+index: 1
+
+A design approach is a general philosophy that may or may not include a guide
+for specific methods that work.It is a long established fact that a reader will
+be distracted by the readable content of a page when looking at its layout.
+
+-- testimonial: Fastn is power
+user: Meenu
+designation: Fastn Builder
+avatar: $assets.files.static.avatar.svg
+index: 2
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie ante
+in luctus rutrum. Sed eu orci mi. Cras sit amet ligula vitae enim interdum
+ultrices. Sed a ultrices purus, nec faucibus justo. Nulla ut lacus quis odio
+aliquet faucibus.
+
+-- testimonial: Fastn is best
+user: Priyanka
+designation: Fastn Builder
+avatar: $assets.files.static.avatar.svg
+index: 3
+
+Nam lacinia nisi sed mauris luctus, id vestibulum enim luctus. Integer iaculis
+est a turpis consequat, id sagittis tellus aliquam. Suspendisse sagittis elit
+nec turpis viverra feugiat. Morbi fermentum convallis magna, eu sagittis ligula
+faucibus at.
+
+-- end: list-of-testimonials
+
+
+
+-- record plan-feature:
+caption title:
+ftd.image-src src:
+
+
+
+-- plan-feature list basic-plan:
+
+-- plan-feature: Full Access
+src: $assets.files.assets.tick.svg
+
+-- plan-feature: Source Files
+src: $assets.files.assets.tick.svg
+
+-- plan-feature: Free Appointments
+src: $assets.files.assets.tick.svg
+
+-- plan-feature: Enhanced Security
+src: $assets.files.assets.tick.svg
+
+-- end: basic-plan
+
+
+
+
+
+-- plan-feature list standard-plan:
+
+-- plan-feature: Full Access
+src: $assets.files.assets.tick.svg
+
+-- plan-feature: Source Files
+src: $assets.files.assets.tick.svg
+
+-- plan-feature: Free Appointments
+src: $assets.files.assets.tick.svg
+
+-- plan-feature: Enhanced Security
+src: $assets.files.assets.tick.svg
+
+-- end: standard-plan
+
+
+
+
+
+-- plan-feature list professional-plan:
+
+-- plan-feature: Full Access
+src: $assets.files.assets.tick.svg
+
+-- plan-feature: Source Files
+src: $assets.files.assets.tick.svg
+
+-- plan-feature: Free Appointments
+src: $assets.files.assets.tick.svg
+
+-- plan-feature: Enhanced Security
+src: $assets.files.assets.tick.svg
+
+-- end: professional-plan

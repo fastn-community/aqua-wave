@@ -1,13 +1,9 @@
--- import: cs
--- import: typo
 -- import: fastn-community.github.io/webify-theme/tnc
 -- import: fastn-community.github.io/webify-theme as theme
-export: hero-bottom-hug, hero-left-hug-expanded, hero-right-hug-list, hero-left-hug-list, articles, article, page
+export: hero-bottom-hug, hero-left-hug-expanded, hero-right-hug-list, hero-left-hug-list, articles, article, page, testimonials-card, pricing, pricing-plan, contact-us, cta-left-hug, cta-right-hug, footer-badge, testimonials
 exposing: markdown, post, h3
 
 -- ftd.image-src aiglesoft-logo: $assets.files.assets.aiglesoft-inc.svg
-
-
 
 
 
@@ -85,10 +81,6 @@ children: $page.wrapper
 -- end: theme.page
 
 -- end: page
-
-
-
-
 
 
 
