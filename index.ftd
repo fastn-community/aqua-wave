@@ -3221,7 +3221,7 @@ color: $inherited.colors.background.base
 link: $featured-post-card-desktop.cta-primary-url
 
 -- ftd.image:
-src: $assets.files.static.tick.svg
+src: $assets.files.assets.tick.svg
 align-self: center
 
 -- end: ftd.row
@@ -3243,7 +3243,7 @@ color: $inherited.colors.background.base
 link: $featured-post-card-desktop.cta-secondary-url
 
 -- ftd.image:
-src: $assets.files.static.tick.svg
+src: $assets.files.assets.tick.svg
 align-self: center
 
 -- end: ftd.row
@@ -3333,7 +3333,7 @@ color: $inherited.colors.background.base
 link: $featured-post-card-mobile.cta-primary-url
 
 -- ftd.image:
-src: $assets.files.static.tick.svg
+src: $assets.files.assets.tick.svg
 align-self: center
 
 -- end: ftd.row
@@ -3352,7 +3352,7 @@ color: $inherited.colors.background.base
 link: $featured-post-card-mobile.cta-secondary-url
 
 -- ftd.image:
-src: $assets.files.static.tick.svg
+src: $assets.files.assets.tick.svg
 align-self: center
 
 -- end: ftd.row
