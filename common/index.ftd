@@ -119,7 +119,68 @@ caption title:
 
 
 
--- integer max-width: 1320
+-- record author-meta:
+optional caption title:
+optional string profile:
+optional string company:
+optional string bio-url:
+optional ftd.image-src image:
+optional body body:
+
+
+
+
+
+-- record post-meta:
+optional caption title:
+optional string published-on:
+optional ftd.image-src post-image:
+optional body body:
+optional string post-url:
+optional author-meta author:
+social-media list social-list:
+tags-list list tags:
+
+
+
+
+
+-- record tags-list:
+caption title:
+string tag-link:
+
+-- tags-list list tags:
+
+-- tags-list: Programming
+tag-link: blog/
+
+-- tags-list: Data Science
+tag-link: blog/
+
+-- tags-list: Technology
+tag-link: blog/
+
+-- tags-list: Writing
+tag-link: blog/
+
+-- tags-list: AI/ML
+tag-link: blog/
+
+-- tags-list: UI/UX
+tag-link: blog/
+
+-- end: tags
+
+
+
+
+-- tags-list list topic:
+
+-- tags-list: Design Inspiration
+tag-link: blog/
+
+-- end: topic
+
 
 
 
@@ -252,3 +313,192 @@ src: $assets.files.assets.tick.svg
 src: $assets.files.assets.tick.svg
 
 -- end: professional-plan
+
+
+
+
+
+
+-- record info-card:
+caption title:
+body body:
+optional boolean is-first: false
+optional boolean is-last: false
+
+-- info-card list list-of-info-cards:
+
+-- info-card: +87%
+
+increased attendee engagement of Bitwise
+
+-- info-card: 1.7M
+
+pipeline generated at Everbridge
+
+-- info-card: 58%
+
+attendee conversion rate at Interfolio
+
+-- end: list-of-info-cards
+
+
+
+
+
+
+
+
+
+
+-- record logos:
+caption title:
+ftd.image-src icon:
+body body:
+
+-- logos list list-of-logos:
+
+-- logos: Marketing
+icon: $assets.files.assets.img.svg
+
+The only SaaS business platform that combines CRM, marketing automation &
+commerce.
+
+-- logos: Marketing
+icon: $assets.files.assets.img.svg
+
+The only SaaS business platform that combines CRM, marketing automation &
+commerce.
+
+-- logos: Marketing
+icon: $assets.files.assets.img.svg
+
+The only SaaS business platform that combines CRM, marketing automation &
+commerce.
+
+-- logos: Marketing
+icon: $assets.files.assets.img.svg
+
+The only SaaS business platform that combines CRM, marketing automation &
+commerce.
+
+-- end: list-of-logos
+
+
+
+
+
+
+
+
+
+
+-- record clients:
+ftd.image-src logo:
+string link:
+
+-- clients list list-of-clients:
+
+-- clients: 
+logo: $assets.files.assets.logo-1.svg
+link: index.html
+
+-- clients: 
+logo: $assets.files.assets.logo-2.svg
+link: index.html
+
+-- clients: 
+logo: $assets.files.assets.logo-3.svg
+link: index.html
+
+-- clients: 
+logo: $assets.files.assets.logo-4.svg
+link: index.html
+
+-- clients: 
+logo: $assets.files.assets.logo-5.svg
+link: index.html
+
+-- end: list-of-clients
+
+
+
+
+
+
+-- record faq:
+caption title: 
+optional body body:
+optional ftd.image-src icon:
+
+-- faq list list-of-faqs:
+
+-- faq: 1.How long does it take to ship my order?
+
+Orders are usually shipped within 1-2 business days after placing the order.
+
+-- faq: 2.What shipping options do you have?
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie ante
+in luctus rutrum. Sed eu orci mi
+
+-- faq: 3.Phasellus varius lectus eu ipsum finibus, a bibendum eros?
+
+Cras sit amet ligula vitae enim interdum ultrices. Sed a ultrices purus, nec
+faucibus justo. Nulla ut lacus quis odio aliquet faucibus.
+
+-- faq: 4.Lorem ipsum dolor sit amet, consectetur?
+
+Suspendisse potenti. Vestibulum auctor dui ut enim viverra consectetur.
+
+-- faq: 5.Nulla ut lacus quis odio aliquet faucibus?
+
+Suspendisse sagittis elit nec turpis viverra feugiat.
+
+-- faq: 6.Nulla ut lacus quis odio aliquet faucibus?
+
+Suspendisse sagittis elit nec turpis viverra feugiat.
+
+-- end: list-of-faqs
+
+
+
+
+
+
+
+
+
+
+-- record feature:
+caption title: 
+ftd.image-src icon:
+body body:
+optional string link:
+
+-- feature list list-of-features:
+
+-- feature: Market Research
+icon: $assets.files.assets.strategy.svg
+link: services/
+
+Sed ut perspiciatis unde omnis iste natus
+
+-- feature: User Experience
+icon: $assets.files.assets.strategy.svg
+link: services/
+
+Error sit voluptatem accusantium doloremque laudantium
+
+-- feature: Digital Marketing
+icon: $assets.files.assets.strategy.svg
+link: services/
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit
+
+-- feature: SEO Services
+icon: $assets.files.assets.strategy.svg
+link: services/
+
+Ut enim ad minima veniam, quis nostrum exercitationem
+
+-- end: list-of-features

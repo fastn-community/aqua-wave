@@ -1,9 +1,9 @@
 -- import: fastn-community.github.io/webify-theme/tnc
 -- import: fastn-community.github.io/webify-theme as theme
-export: hero-bottom-hug, hero-left-hug-expanded, hero-right-hug-list, hero-left-hug-list, articles, article, page, testimonials-card, pricing, pricing-plan, contact-us, cta-left-hug, cta-right-hug, footer-badge, testimonials, tc-popup, tc-item, tc-item-item
+export: hero-bottom-hug, hero-left-hug-expanded, hero-right-hug-list, hero-left-hug-list, articles, article, page, testimonials-card, pricing, pricing-plan, contact-us, cta-left-hug, cta-right-hug, footer-badge, testimonials, tc-popup, tc-item, tc-item-item, logo-cloud, post-meta
 exposing: markdown, post, h3
 
--- ftd.image-src aiglesoft-logo: $assets.files.assets.aiglesoft-inc.svg
+-- ftd.image-src site-logo: $assets.files.assets.light.svg
 
 
 
@@ -22,7 +22,7 @@ optional string document-title: fastn web site template. Build Your Own Website 
 optional string document-description: Simple, easy-to-use web site template to build your own start-up website. Change colours and typography effortlessly.
 ftd.raw-image-src document-image: https://fastn.com/-/fastn.com/images/fastn-logo.png
 optional string site-name: 
-optional ftd.image-src site-logo: $aiglesoft-logo
+optional ftd.image-src site-logo: $site-logo
 boolean full-width: true
 boolean blog: false
 boolean show-banner: false
@@ -67,7 +67,7 @@ types: $typo.types
 
 -- theme.page.footer:
 
--- theme.footer-badge: Copyright © 2023 Aiglesoft Inc.
+-- theme.footer-badge: Copyright © 2023 Webify Theme Inc.
 
 -- end: theme.page.footer
 

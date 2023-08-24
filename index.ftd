@@ -1,12 +1,13 @@
 -- import: fastn/processors as pr
-
+-- import: fastn-community.github.io/typography
+export: markdown,h0,h1,h2,h3
 
 
 -- ws.page:
-full-width: true
-sidebar: false
 
--- hero-bottom-hug: Build, manage and deliver ads on every platform with clics.
+-- ws.page.body:
+
+-- ws.hero-bottom-hug: Build, manage and deliver ads on every platform with clics.
 tag: Unlimited Audience, One Place
 primary-cta: Learn More
 primary-cta-link: index.html
@@ -15,10 +16,8 @@ image: $assets.files.assets.hero-image.jpg
 I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click 
 “Edit Text” or double click me to add your own content and make changes to the font. 
 
--- end: hero-bottom-hug
 
-
--- hero-left-hug-expanded: Easy Setup
+-- ws.hero-left-hug-expanded: Easy Setup
 tag: Set it up once, and you're good to go. No hassle or code required.
 image: $assets.files.assets.hero-image.jpg
 primary-cta: Book a Demo
@@ -27,10 +26,8 @@ primary-cta-link: index.html
 I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you 
 to tell a story and let your users know a little more about you.
 
--- end: hero-left-hug-expanded
 
-
--- hero-bottom-hug: From API integrations to powerful analytics - clics has it all.
+-- ws.hero-bottom-hug: From API integrations to powerful analytics - clics has it all.
 tag: Features
 primary-cta: Learn More
 primary-cta-link: index.html
@@ -40,9 +37,8 @@ I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just 
 “Edit Text” or double click me to add your own content and make changes to the font. 
 I’m a great place for you to tell a story and let your users know a little more about you. 
 
--- end: hero-bottom-hug
 
--- hero-right-hug-list: Smart budgeting
+-- ws.hero-right-hug-list: Smart budgeting
 primary-cta: Book a Demo
 primary-cta-link: index.html
 image: $assets.files.assets.hero-image.jpg
@@ -50,9 +46,8 @@ features: $common.features
 
 With clics' budgeting system, you can rest assured your resources are spent wisely.
 
--- end: hero-right-hug-list
 
--- hero-left-hug-list: Smart budgeting
+-- ws.hero-left-hug-list: Smart budgeting
 primary-cta: Book a Demo
 primary-cta-link: index.html
 image: $assets.files.assets.hero-image.jpg
@@ -60,48 +55,45 @@ features: $common.template-features
 
 With clics' budgeting system, you can rest assured your resources are spent wisely.
 
--- end: hero-left-hug-list
-
-
--- articles: Resources
+-- ws.articles: Resources
 primary-cta: All Resources
 
 The Latest from clics
 
--- article: How to Build a Brand
+-- ws.article: How to Build a Brand
 src: $assets.files.assets.article-image.jpg
 
 Create a blog post subtitle that summarizes your post in a few short,
 punchy sentences and entices your audience to continue reading.
 
--- article: How to Build a Brand
+-- ws.article: How to Build a Brand
 src: $assets.files.assets.article-image.jpg
 
 Create a blog post subtitle that summarizes your post in a few short,
 punchy sentences and entices your audience to continue reading.
 
--- article: How to Build a Brand
+-- ws.article: How to Build a Brand
 src: $assets.files.assets.article-image.jpg
 
 Create a blog post subtitle that summarizes your post in a few short,
 punchy sentences and entices your audience to continue reading.
 
--- end: articles
+-- end: ws.articles
 
--- testimonials: Testimonials
+-- ws.testimonials: Testimonials
 
 Why Companies Like Click?
 
--- testimonials-card:
+-- ws.testimonials-card:
 testimonials: $common.list-of-testimonials
 nav: $common.navs
 
--- end: testimonials-card
+-- end: ws.testimonials-card
 
 
--- end: testimonials
+-- end: ws.testimonials
 
--- search-card: Subscribe to our newsletter to get all the updates and news about clics.
+-- ws.search-card: Subscribe to our newsletter to get all the updates and news about clics.
 input-label: Enter Your Email here *
 primary-cta: Subscribe
 primary-cta-link: index.html
@@ -522,6 +514,38 @@ padding-horizontal.px: 24
 -- end: ftd.column
 
 -- end: doc-page-mobile
+
+
+
+
+
+
+
+
+
+
+-- component render-toc:
+pr.toc-item list toc-obj:
+
+-- ftd.column:
+min-width.fixed.percent: 20
+min-height.fixed.calc: 100vh - 200px
+height: fill-container
+width: fill-container
+padding-right.px: 26
+padding-left.px: 41
+padding-vertical.px: 50
+spacing.fixed.px: 24
+border-top-width.px: 1
+border-color: $inherited.colors.border
+
+-- toc-instance:
+$loop$: $render-toc.toc-obj as $obj
+toc: $obj
+
+-- end: ftd.column
+
+-- end: render-toc
 
 
 
@@ -1212,108 +1236,6 @@ toc: $obj
 
 
 
--- component child-of-childrens:
-pr.toc-item toc:
-
--- ftd.column:
-width: fill-container
-padding-left.px: 10
-spacing.fixed.px: 24
-
--- ftd.text:
-link if { child-of-childrens.toc.url != NULL }: $child-of-childrens.toc.url
-text: $child-of-childrens.toc.title
-role: $inherited.types.copy-small
-color: $inherited.colors.text
-color if { child-of-childrens.toc.is-active }: $inherited.colors.text-strong
-
--- ftd.column:
-if: { !ftd.is_empty(child-of-childrens.toc.children) }
-width: fill-container
-
--- child-of-childrens:
-$loop$: $child-of-childrens.toc.children as $obj
-toc: $obj
-
--- end: ftd.column
-
--- end: ftd.column
-
--- end: child-of-childrens
-
-
-
-
-
-
-
-
-
-
--- component render-toc:
-pr.toc-item list toc-obj:
-
--- ftd.column:
-min-width.fixed.percent: 20
-min-height.fixed.calc: 100vh - 200px
-height: fill-container
-width: fill-container
-padding-right.px: 26
-padding-left.px: 41
-padding-vertical.px: 50
-spacing.fixed.px: 24
-border-top-width.px: 1
-border-color: $inherited.colors.border
-
--- toc-instance:
-$loop$: $render-toc.toc-obj as $obj
-toc: $obj
-
--- end: ftd.column
-
--- end: render-toc
-
-
-
-
-
-
-
-
-
-
--- component render-toc:
-pr.toc-item list toc-obj:
-
--- ftd.column:
-min-width.fixed.percent: 20
-min-height.fixed.calc: 100vh - 200px
-height: fill-container
-width: fill-container
-padding-right.px: 26
-padding-left.px: 41
-padding-vertical.px: 50
-spacing.fixed.px: 24
-border-top-width.px: 1
-border-color: $inherited.colors.border
-
--- toc-instance:
-$loop$: $render-toc.toc-obj as $obj
-toc: $obj
-
--- end: ftd.column
-
--- end: render-toc
-
-
-
-
-
-
-
-
-
-
 -- component right-sidebar:
 ftd.ui list right-sidebar:
 optional boolean blog: false
@@ -1330,6 +1252,59 @@ border-color: $inherited.colors.border
 -- end: ftd.column
 
 -- end: right-sidebar
+
+
+
+
+
+
+
+
+
+
+-- component link-group:
+caption title:
+string cta:
+children wrapper:
+boolean $active: false
+optional boolean blog: false
+
+-- ftd.column:
+$on-click$: $ftd.set-bool($a= $link-group.active, v = true)
+spacing.fixed.px: 12
+
+-- ftd.column:
+if: { link-group.active }
+
+-- ftd.text: $link-group.title
+role: $inherited.types.button-large
+color: $inherited.colors.accent.primary
+link: $link-group.cta
+style: bold
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { !link-group.active }
+
+-- ftd.text: $link-group.title
+role: $inherited.types.button-small
+color: $inherited.colors.text
+link: $link-group.cta
+style: medium
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+children: $link-group.wrapper
+margin-left.px: 28
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: link-group
 
 
 
@@ -2742,3 +2717,215 @@ $tc-item-item.content
 -- end: ftd.column
 
 -- end: tc-item-item
+
+
+
+
+
+
+
+
+
+
+-- component logo-cloud:
+caption title:
+body body:
+optional string tag:
+common.logos list logo-list:
+string id: logo-cloud
+
+-- ftd.column:
+width: fill-container
+id: $logo-cloud.id
+classes: section
+
+-- ftd.desktop:
+
+-- logo-cloud-desktop: $logo-cloud.title
+body: $logo-cloud.body
+tag: $logo-cloud.tag
+logo-list: $logo-cloud.logo-list
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- logo-cloud-mobile: $logo-cloud.title
+body: $logo-cloud.body
+tag: $logo-cloud.tag
+logo-list: $logo-cloud.logo-list
+
+-- end: ftd.mobile
+
+-- end: ftd.column
+
+-- end: logo-cloud
+
+
+
+
+
+
+
+
+
+
+-- component logo-cloud-desktop:
+caption title:
+body body:
+optional string tag:
+common.logos list logo-list:
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 80
+padding-vertical.px: 111
+padding-horizontal.px: 50
+background.solid: $inherited.colors.background.step-1
+
+-- ftd.column:
+width.fixed.percent: 60
+spacing.fixed.px: 17
+padding-top.px: 30
+
+-- ftd.text: $logo-cloud-desktop.tag
+if: { logo-cloud-desktop.tag != NULL }
+background.solid: $inherited.colors.info.base
+color: $inherited.colors.info.text
+border-radius.px: 30
+padding-vertical.px: 5
+role: $inherited.types.link
+padding-horizontal.px: 11
+
+-- ftd.text: $logo-cloud-desktop.title
+role: $inherited.types.heading-large
+color: $inherited.colors.text-strong
+
+-- ftd.text:
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+$logo-cloud-desktop.body
+
+-- end: ftd.column
+
+-- ftd.row:
+width: fill-container
+wrap: true
+spacing.fixed.px: 10
+align-content: center
+
+-- logo-lists: $obj.title
+$loop$: $logo-cloud-desktop.logo-list as $obj
+icon: $obj.icon
+body: $obj.body
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: logo-cloud-desktop
+
+
+
+
+
+
+
+
+
+
+-- component logo-cloud-mobile:
+caption title:
+body body:
+optional string tag:
+common.logos list logo-list:
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 24
+background.solid: $inherited.colors.background.step-1
+padding-vertical.px: 24
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 17
+padding-top.px: 30
+padding-horizontal.px: 24
+
+-- ftd.text: $logo-cloud-mobile.tag
+if: { logo-cloud-mobile.tag != NULL }
+background.solid: $inherited.colors.info.base
+color: $inherited.colors.info.text
+border-radius.px: 30
+padding-vertical.px: 5
+role: $inherited.types.link
+padding-horizontal.px: 11
+
+-- ftd.text: $logo-cloud-mobile.title
+role: $inherited.types.heading-large
+color: $inherited.colors.text-strong
+
+-- ftd.text:
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+$logo-cloud-mobile.body
+
+-- end: ftd.column
+
+-- ftd.column:
+padding-horizontal.px: 24
+wrap: true
+spacing.fixed.px: 10
+width: fill-container
+
+-- logo-lists: $obj.title
+$loop$: $logo-cloud-mobile.logo-list as $obj
+icon: $obj.icon
+body: $obj.body
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: logo-cloud-mobile
+
+
+
+
+
+
+
+
+
+
+
+-- component child-of-childrens:
+pr.toc-item toc:
+
+-- ftd.column:
+width: fill-container
+padding-left.px: 10
+spacing.fixed.px: 24
+
+-- ftd.text:
+link if { child-of-childrens.toc.url != NULL }: $child-of-childrens.toc.url
+text: $child-of-childrens.toc.title
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+color if { child-of-childrens.toc.is-active }: $inherited.colors.text-strong
+
+-- ftd.column:
+if: { !ftd.is_empty(child-of-childrens.toc.children) }
+width: fill-container
+
+-- child-of-childrens:
+$loop$: $child-of-childrens.toc.children as $obj
+toc: $obj
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: child-of-childrens
