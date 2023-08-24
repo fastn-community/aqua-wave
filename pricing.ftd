@@ -1,3 +1,5 @@
+-- ws.page:
+
 -- ws.pricing: PRICING PLANS
 
 -- ws.pricing-plan: BASIC
@@ -28,3 +30,5 @@ label: Most Popular
 plan-validity: Valid for 12 month
 
 -- end: ws.pricing
+
+-- end: ws.page

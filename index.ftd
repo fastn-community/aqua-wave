@@ -27,8 +27,11 @@ image: $assets.files.assets.hero-image.jpg
 I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you 
 to tell a story and let your users know a little more about you.
 
+-- ws.hero-bottom-hug: Put clics to work. Invest your time where it's needed
+tag: Why clics
 
--- ws.hero-left-hug-expanded: Easy Setup
+
+-- ws.cta-left-hug: Easy Setup
 tag: Set it up once, and you're good to go. No hassle or code required.
 image: $assets.files.assets.hero-image.jpg
 primary-cta: Book a Demo
@@ -38,22 +41,33 @@ I'm a paragraph. Click here to add your own text and edit me. I’m a great plac
 to tell a story and let your users know a little more about you.
 
 
--- ws.hero-right-hug-list: Smart budgeting
+-- ws.cta-right-hug: Smart budgeting
 primary-cta: Book a Demo
 primary-cta-link: index.html
 image: $assets.files.assets.hero-image.jpg
-features: $common.features
 
 With clics' budgeting system, you can rest assured your resources are spent wisely.
 
+- Performance Based Budgeting
 
--- ws.hero-left-hug-list: Smart budgeting
+- Dynamic resources allocation
+
+
+
+-- ws.cta-left-hug: Smart budgeting
 primary-cta: Book a Demo
 primary-cta-link: index.html
 image: $assets.files.assets.hero-image.jpg
-features: $common.template-features
 
 With clics' budgeting system, you can rest assured your resources are spent wisely.
+
+- Image Ads
+
+- Video Ads
+
+- Story Ads
+
+- Interactive Ads
 
 -- ws.hero-bottom-hug: From API integrations to powerful analytics - clics has it all.
 tag: Features
@@ -572,10 +586,10 @@ toc: $obj
 caption title:
 optional body body:
 optional string tag:
-ftd.image-src image:
+optional ftd.image-src image:
 optional string primary-cta:
-string primary-cta-link: index.html
-ftd.image-src primary-cta-icon: $assets.files.assets.check-solid.svg
+optional string primary-cta-link: index.html
+optional ftd.image-src primary-cta-icon: $assets.files.assets.check-solid.svg
 
 -- ftd.column:
 width: fill-container
@@ -619,6 +633,7 @@ cta-link: $hero-bottom-hug.primary-cta-link
 -- end: ftd.row
 
 -- ftd.image:
+if: { hero-bottom-hug.image != NULL }
 width: fill-container
 max-width.fixed.px: 1320
 height.fixed.px: 680
@@ -632,249 +647,6 @@ margin-top.px: 45
 -- end: hero-bottom-hug
 
 
-
-
-
-
-
-
-
--- component hero-right-hug-list:
-caption title:
-optional body body:
-ftd.image-src image:
-optional string primary-cta:
-optional string primary-cta-link: index.html 
-$common.record-feature list features:
-
--- ftd.row:
-width: fill-container
-align-content: center
-height: fill-container
-padding-horizontal.px if { ftd.device == "mobile" }: 20
-
--- ftd.row:
-width: fill-container
-height: fill-container
-wrap: true
-color: $inherited.colors.text
-
--- ftd.column:
-width.fixed.percent: 37.5
-width if { ftd.device == "mobile" }: fill-container
-margin-left.percent: 12.5
-padding-right.px: 50
-align-self: center
-
--- ftd.text: $hero-right-hug-list.title
-role: $inherited.types.heading-medium
-
--- ftd.text:
-role: $inherited.types.heading-small
-max-width.fixed.percent: 70
-margin-top.px: 25
-
-$hero-right-hug-list.body
-
--- ftd.column:
-spacing.fixed.px: 25
-margin-vertical.px: 25
-
--- bullet-point: $obj.title
-$loop$: $hero-right-hug-list.features as $obj
-list-icon: https://static.wixstatic.com/media/c837a6_ccabc9e7490d460f94f17b6b3248bb06~mv2.png/v1/fill/w_40,h_40,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Artboard%201%20copy%203.png
-
--- end: ftd.column
-
--- button: $hero-right-hug-list.primary-cta
-if: { hero-right-hug-list.primary-cta != NULL }
-cta-link: $hero-right-hug-list.primary-cta-link
-
--- end: ftd.column
-
--- ftd.column:
-max-width.fixed.percent: 50
-width if { ftd.device == "mobile" }: fill-container
-
--- ftd.image:
-width: fill-container
-src: $hero-right-hug-list.image
-
--- end: ftd.column
-
--- end: ftd.row
-
--- end: ftd.row
-
--- end: hero-right-hug-list
-
-
-
-
-
-
-
-
-
-
--- component hero-left-hug-list:
-caption title:
-optional body body:
-ftd.image-src image:
-optional string primary-cta:
-optional string primary-cta-link: index.html 
-$common.record-feature list features:
-
--- ftd.row:
-width: fill-container
-align-content: center
-height: fill-container
-padding-horizontal.px if { ftd.device == "mobile" }: 20
-
--- ftd.row:
-width: fill-container
-height: fill-container
-wrap: true
-color: $inherited.colors.text
-
--- ftd.column:
-max-width.fixed.percent: 50
-width if { ftd.device == "mobile" }: fill-container
-
--- ftd.image:
-width: fill-container
-src: $hero-left-hug-list.image
-
--- end: ftd.column
-
--- ftd.column:
-width.fixed.percent: 37.5
-width if { ftd.device == "mobile" }: fill-container
-margin-left.percent: 12.5
-padding-right.px: 50
-align-self: center
-
--- ftd.text: $hero-left-hug-list.title
-role: $inherited.types.heading-medium
-
--- ftd.text:
-role: $inherited.types.heading-small
-max-width.fixed.percent: 70
-margin-top.px: 25
-
-$hero-left-hug-list.body
-
--- ftd.row:
-width.fixed.px: 400
-spacing.fixed.px: 60
-margin-vertical.px: 36
-wrap: true
-
--- bullet-point: $obj.title
-$loop$: $hero-left-hug-list.features as $obj
-list-icon: https://static.wixstatic.com/media/c837a6_ccabc9e7490d460f94f17b6b3248bb06~mv2.png/v1/fill/w_40,h_40,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Artboard%201%20copy%203.png
-
--- end: ftd.row
-
--- button: $hero-left-hug-list.primary-cta
-if: { hero-left-hug-list.primary-cta != NULL }
-cta-link: $hero-left-hug-list.primary-cta-link
-
--- end: ftd.column
-
--- end: ftd.row
-
--- end: ftd.row
-
--- end: hero-left-hug-list
-
-
-
-
-
-
-
-
-
--- component hero-left-hug-expanded:
-caption title:
-optional body body:
-optional string tag:
-ftd.image-src image:
-optional string primary-cta:
-string primary-cta-link: index.html
-ftd.image-src primary-cta-icon: $assets.files.assets.check-solid.svg
-
--- ftd.row:
-width: fill-container
-align-content: center
-height: fill-container
-padding-horizontal.px if { ftd.device == "mobile" }: 20
-padding-vertical.px: 49
-
--- ftd.row:
-width: fill-container
-height: fill-container
-wrap: true
-
--- ftd.column:
-width.fixed.percent: 50
-height.fixed.px: 540
-width if { ftd.device == "mobile" }: fill-container
-align-self: center
-margin-vertical.px if { ftd.device == "mobile" }: 30
-
--- ftd.image:
-width: fill-container
-height: fill-container
-src: $hero-left-hug-expanded.image
-
--- end: ftd.column
-
--- ftd.column:
-width.fixed.percent: 50
-width if { ftd.device == "mobile" }: fill-container
-align-content: center
-align-self: center
-
--- ftd.column:
-width.fixed.percent: 65
-color: $inherited.colors.text
-
--- ftd.text: $hero-left-hug-expanded.title
-role: $inherited.types.heading-hero
-
--- ftd.text: $hero-left-hug-expanded.tag
-if: { hero-left-hug-expanded.tag != NULL }
-role: $inherited.types.copy-regular
-margin-top.px: 24
-
--- ftd.text:
-if: { hero-left-hug-expanded.body != NULL }
-role: $inherited.types.copy-regular
-max-width.fixed.percent: 90
-margin-top.px: 30
-
-$hero-left-hug-expanded.body
-
--- ftd.row:
-margin-top.px: 34
-
--- button-solid: $hero-left-hug-expanded.primary-cta
-if: { hero-left-hug-expanded.primary-cta != NULL }
-cta-link: $hero-left-hug-expanded.primary-cta-link
-
--- end: ftd.row
-
--- end: ftd.column
-
--- end: ftd.column
-
--- end: ftd.row
-
--- end: ftd.row
-
--- end: hero-left-hug-expanded
 
 
 
@@ -2152,23 +1924,23 @@ classes if { cta-left-hug.mouse-in }: animate-left
 spacing.fixed.px: 24
 width.fixed.percent: 70
 
--- ftd.text: $cta-left-hug.tag
-if: { cta-left-hug.tag != NULL }
-background.solid: $inherited.colors.accent.primary
-color: $inherited.colors.info.text
-border-radius.px: 30
-padding-vertical.px: 5
-role: $inherited.types.link
-padding-horizontal.px: 11
-
 -- ftd.text: $cta-left-hug.title
 if: { cta-left-hug.title != NULL }
 role: $inherited.types.heading-large
 color: $inherited.colors.text
 
+-- ftd.text: $cta-left-hug.tag
+if: { cta-left-hug.tag != NULL }
+;; background.solid: $inherited.colors.accent.primary
+color: $inherited.colors.text
+border-radius.px: 30
+padding-vertical.px: 5
+role: $inherited.types.copy-large
+padding-horizontal.px: 11
+
 -- ftd.text: 
 if: { cta-left-hug.body != NULL }
-role: $inherited.types.copy-regular
+role: $inherited.types.copy-large
 color: $inherited.colors.text
 
 $cta-left-hug.body
@@ -2290,7 +2062,7 @@ color: $inherited.colors.text
 
 -- ftd.text: 
 if: { cta-right-hug.body != NULL }
-role: $inherited.types.copy-regular
+role: $inherited.types.copy-large
 color: $inherited.colors.text
 
 $cta-right-hug.body

@@ -1,4 +1,6 @@
 
+-- ws.page: 
+
 -- ws.cta-left-hug: Engage your most valuable visitors
 image: $assets.files.assets.hero-image.jpg
 
@@ -50,3 +52,5 @@ how you came up with the idea for your business and what makes you different fro
 Drop us a line with any questions, inquiries or business proposals
 
 -- end: ws.contact-us
+
+-- end: ws.page

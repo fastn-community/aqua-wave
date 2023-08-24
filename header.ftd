@@ -141,7 +141,6 @@ max-width.fixed.px: 1440
 
 -- ftd.row:
 width: fill-container
-spacing: space-between
 padding-vertical.px: 20
 align-content: center
 
@@ -172,7 +171,7 @@ site-name: $header-desktop.site-name
 
 -- ftd.row: 
 width: fill-container
-align-content: center
+align-content: right
 spacing.fixed.px: 32
 margin-left.px: 24
 
