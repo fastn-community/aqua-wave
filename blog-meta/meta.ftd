@@ -29,3 +29,11 @@ post-image: $assets.files.assets.post1.jpg
 image: $assets.files.assets.avatar.png
 author: $patrica.patrica
 post-url: blog-articles/sample-post-1/
+
+Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
+
+-- common.post-meta meta4: New product launch event
+post-image: $assets.files.assets.featured.jpg
+post-url: blog-articles/sample-post-1/
+
+Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
