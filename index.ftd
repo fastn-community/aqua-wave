@@ -996,7 +996,7 @@ white-space: nowrap
 -- component testimonials-card:
 optional caption title:
 common.testimonial list testimonials:
-optional common.testimonial-nav list nav:
+common.testimonial-nav list nav:
 string id: testimonials
 
 -- ftd.column:
@@ -1037,7 +1037,7 @@ nav: $testimonials-card.nav
 -- component testimonials-card-desktop:
 optional caption title:
 common.testimonial list testimonials:
-optional common.testimonial-nav list nav:
+common.testimonial-nav list nav:
 
 -- ftd.column:
 max-width.fixed.px: 540
@@ -1084,7 +1084,7 @@ index: $obj.index
 -- component testimonials-card-mobile:
 optional caption title:
 common.testimonial list testimonials:
-optional common.testimonial-nav list nav:
+common.testimonial-nav list nav:
 
 -- ftd.column:
 padding-vertical.px: 24
@@ -1111,8 +1111,8 @@ index: $obj.index
 -- ftd.row:
 spacing.fixed.px: 12
 
+;; if: { !ftd.is_empty(testimonials-card-mobile.nav) }
 -- nav-lists:
-if: { !ftd.is_empty(testimonials-card-mobile.nav) }
 $loop$: $testimonials-card-mobile.nav as $obj
 index: $obj.index
 
