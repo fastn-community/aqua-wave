@@ -227,70 +227,6 @@ faucibus at.
 
 
 
--- record plan-feature:
-caption title:
-ftd.image-src src:
-
-
-
--- plan-feature list basic-plan:
-
--- plan-feature: Full Access
-src: $assets.files.assets.tick.svg
-
--- plan-feature: Source Files
-src: $assets.files.assets.tick.svg
-
--- plan-feature: Free Appointments
-src: $assets.files.assets.tick.svg
-
--- plan-feature: Enhanced Security
-src: $assets.files.assets.tick.svg
-
--- end: basic-plan
-
-
-
-
-
--- plan-feature list standard-plan:
-
--- plan-feature: Full Access
-src: $assets.files.assets.tick.svg
-
--- plan-feature: Source Files
-src: $assets.files.assets.tick.svg
-
--- plan-feature: Free Appointments
-src: $assets.files.assets.tick.svg
-
--- plan-feature: Enhanced Security
-src: $assets.files.assets.tick.svg
-
--- end: standard-plan
-
-
-
-
-
--- plan-feature list professional-plan:
-
--- plan-feature: Full Access
-src: $assets.files.assets.tick.svg
-
--- plan-feature: Source Files
-src: $assets.files.assets.tick.svg
-
--- plan-feature: Free Appointments
-src: $assets.files.assets.tick.svg
-
--- plan-feature: Enhanced Security
-src: $assets.files.assets.tick.svg
-
--- end: professional-plan
-
-
-
 
 
 
@@ -477,3 +413,75 @@ link: services/
 Ut enim ad minima veniam, quis nostrum exercitationem
 
 -- end: list-of-features
+
+
+
+
+
+
+
+
+
+
+-- record feature-pricing:
+caption title:
+boolean active: false
+
+
+
+-- feature-pricing list free-feature-list:
+
+-- feature-pricing: All the features
+active: true
+
+-- feature-pricing: All the features
+active: true
+
+-- feature-pricing: All the features
+
+-- feature-pricing: All the features
+
+-- feature-pricing: All the features
+
+-- end: free-feature-list
+
+
+
+-- feature-pricing list startup-feature-list:
+
+-- feature-pricing: All the features
+active: true
+
+-- feature-pricing: All the features
+active: true
+
+-- feature-pricing: All the features
+active: true
+
+-- feature-pricing: All the features
+
+-- feature-pricing: All the features
+
+-- end: startup-feature-list
+
+
+
+
+-- feature-pricing list enterprise-feature-list:
+
+-- feature-pricing: All the features
+active: true
+
+-- feature-pricing: All the features
+active: true
+
+-- feature-pricing: All the features
+active: true
+
+-- feature-pricing: All the features
+active: true
+
+-- feature-pricing: All the features
+active: true
+
+-- end: enterprise-feature-list
