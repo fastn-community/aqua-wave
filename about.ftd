@@ -42,7 +42,59 @@ about your team and what services you provide. Tell your visitors the story of
 how you came up with the idea for your business and what makes you different from
  your competitors. Make your company stand out and show your visitors who you are.
 
--- ws.contact-us: Contact Clicks
+
+-- ws.team: Meet the amazing team behind Aiglesoft Inc 
+tag: OUR TEAM 
+
+-- ws.team.members:
+
+-- ws.member: Saurabh Lohiya
+profile: Founder and CEO
+image: $assets.files.assets.saurabh-lohiya.jpg
+
+Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.
+
+-- ws.member: Sophie Moore
+profile: VP of Marketing
+image: $assets.files.assets.sophie-moore.jpg
+
+Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.
+
+-- ws.member: Matt Cannon
+profile: VP of Product
+image: $assets.files.assets.matt-cannon.jpg
+
+Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.
+
+-- ws.member: Jonathan Barnes
+profile: Head of Marketing
+image: $assets.files.assets.team-member-1.jpg
+
+Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.
+
+-- ws.member: Andrew Barker
+profile: Customers Manager
+image: $assets.files.assets.team-member-2.jpg
+
+Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.
+
+-- ws.member: Nadine Adams
+profile: Content Manager
+image: $assets.files.assets.team-member-3.jpg
+
+Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.
+
+-- end: ws.team.members
+
+-- ws.team.body:
+
+Lorem ipsum dolor sit amet, consectet adipiscing elit. Suspendisse varius enim 
+in eros elementum tristique. consectet adipiscing elit. Suspendisse varius enim 
+in eros elementum tristique.
+
+-- end: ws.team
+
+-- ws.contact-us: Contact Us
 
 Drop us a line with any questions, inquiries or business proposals
 
