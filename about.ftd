@@ -14,7 +14,6 @@ about your team and what services you provide. Tell your visitors the story of
 how you came up with the idea for your business and what makes you different from
 your competitors. Make your company stand out and show your visitors who you are.
 
--- end: ws.cta-left-hug
 
 -- ws.cta-right-hug: Engage your most valuable visitors
 image: $assets.files.assets.hero-image.jpg
@@ -29,7 +28,6 @@ about your team and what services you provide. Tell your visitors the story of
 how you came up with the idea for your business and what makes you different from
  your competitors. Make your company stand out and show your visitors who you are.
 
--- end: ws.cta-right-hug
 
 -- ws.cta-left-hug: Engage your most valuable visitors
 image: $assets.files.assets.hero-image.jpg
@@ -43,9 +41,6 @@ You can use this space to go into a little more detail about your company. Talk
 about your team and what services you provide. Tell your visitors the story of 
 how you came up with the idea for your business and what makes you different from
  your competitors. Make your company stand out and show your visitors who you are.
-
--- end: ws.cta-left-hug
-
 
 -- ws.contact-us: Contact Clicks
 

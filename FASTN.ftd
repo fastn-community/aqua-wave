@@ -3,10 +3,9 @@
 -- fastn.package: fastn-community.github.io/webify-theme
 favicon: /-/fastn-community.github.io/webify-theme/favicon.ico
 
--- fastn.dependency: fastn-community.github.io/golden-sunlight-cs
+-- fastn.dependency: fastn-community.github.io/golden-sunlight-cs as cs
 -- fastn.dependency: fastn-community.github.io/roboto-typography as typo
 -- fastn.dependency: fastn-community.github.io/typography
--- fastn.dependency: fastn-community.github.io/dark-flame-cs as cs
 
 -- fastn.auto-import: fastn-community.github.io/webify-theme/FASTN/ws
 -- fastn.auto-import: fastn-community.github.io/webify-theme/assets

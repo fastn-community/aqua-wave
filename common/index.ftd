@@ -92,31 +92,6 @@ $processor$: pr.toc
 
 
 
--- record record-feature:
-caption title:
-
-
--- record-feature list features:
-
--- record-feature: Peformance-based budgeting.
-
--- record-feature: Dynamic Resource Allocation.
-
--- end: features
-
-
--- record-feature list template-features:
-
--- record-feature: Image Ads.
-
--- record-feature: Video Ads.
-
--- record-feature: Story Ads.
-
--- record-feature: Interactive Ads.
-
--- end: template-features
-
 
 
 -- record author-meta:

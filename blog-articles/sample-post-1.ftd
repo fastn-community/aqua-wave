@@ -1,7 +1,7 @@
 -- import: fastn-community.github.io/webify-theme/blog-meta/meta
 
 
--- ws.article-1: Bringing the world together through live experiences.
+-- ws.article: Bringing the world together through live experiences.
 post: $meta.meta3
 
 I’m an expert on how technology hijacks our psychological vulnerabilities.
@@ -186,4 +186,4 @@ getting hijacked.
 When using technology, we often focus optimistically on all the things it does
 for us. But I want to show you where it might do the opposite.
 
--- end: ws.article-1
+-- end: ws.article
