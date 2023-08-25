@@ -1,33 +1,49 @@
 -- ws.page:
 
--- ws.pricing: PRICING PLANS
+-- ws.pricing: Incredibly Easy To Use, But Surprisingly Powerful
 
--- ws.pricing-plan: BASIC
-price: 9
-primary-cta: Get Started
-primary-cta-link: index.html/pricing
-plan: $common.basic-plan
-tag: Best for small teams
-label: Most Popular
-plan-validity: Valid for 12 month
+-- ws.pricing.body:
 
--- ws.pricing-plan: STANDARD
-price: 39
-primary-cta: Get Started
-primary-cta-link: index.html/pricing
-plan: $common.standard-plan
-tag: Best for small teams
-label: Most Popular
-plan-validity: Valid for 12 month
+Lorem ipsum dolor sit amet, consectet adipiscing elit. Suspendisse varius enim 
+in eros elementum tristique. consectet adipiscing elit. Suspendisse varius enim 
+in eros elementum tristique.
 
--- ws.pricing-plan: PROFESSIONAL
+-- ws.pricing.pricing-cards:
+
+-- ws.pricing-card: Starter
+active: false 
+price: 0
+currency: \$
+subscription: mo
+feature-list: $common.free-feature-list
+cta-text: Get Started
+cta-link: /pricing/
+
+Lorem ipsum dolor sit amet, consectet adipiscing elit.
+
+-- ws.pricing-card: Basic
+active: true 
 price: 99
-primary-cta: Get Started
-primary-cta-link: index.html/pricing
-plan: $common.professional-plan
-tag: Best for small teams
-label: Most Popular
-plan-validity: Valid for 12 month
+currency: \$
+subscription: mo
+feature-list: $common.startup-feature-list
+cta-text: Get Started
+cta-link: /pricing/
+
+Lorem ipsum dolor sit amet, consectet adipiscing elit.
+
+-- ws.pricing-card: Advanced
+active: false 
+price: 153
+currency: \$
+subscription: mo
+feature-list: $common.enterprise-feature-list
+cta-text: Get Started
+cta-link: /pricing/
+
+Lorem ipsum dolor sit amet, consectet adipiscing elit.
+
+-- end: ws.pricing.pricing-cards
 
 -- end: ws.pricing
 
