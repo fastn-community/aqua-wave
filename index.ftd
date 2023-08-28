@@ -1111,8 +1111,8 @@ index: $obj.index
 -- ftd.row:
 spacing.fixed.px: 12
 
-;; if: { !ftd.is_empty(testimonials-card-mobile.nav) }
 -- nav-lists:
+if: { !ftd.is_empty(testimonials-card-mobile.nav) }
 $loop$: $testimonials-card-mobile.nav as $obj
 index: $obj.index
 
