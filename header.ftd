@@ -31,7 +31,7 @@ z-index: 9999
 -- ftd.column:
 if: { header.sidebar-open }
 width: fill-container
-background.solid: $inherited.colors.background.overlay
+background.solid: $inherited.colors.background.step-1
 height.fixed.calc: 100vh
 z-index: 10
 
@@ -131,7 +131,7 @@ boolean $mouse-in: false
 
 -- ftd.column:
 width: fill-container
-background.solid: $inherited.colors.background.overlay
+background.solid: $inherited.colors.background.step-1
 align-content: center
 padding-horizontal.px: 40
 

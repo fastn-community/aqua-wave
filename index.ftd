@@ -3171,7 +3171,7 @@ width: fill-container
 -- ftd.row:
 if: { featured-post-card-desktop.cta-primary != NULL }
 border-radius.px: 4
-background.solid: $inherited.colors.shadow
+background.solid: $inherited.colors.cta-primary.base
 spacing.fixed.px: 16
 padding-horizontal.px: 50
 padding-vertical.px: 16
@@ -3193,11 +3193,11 @@ align-self: center
 -- ftd.row:
 if: { featured-post-card-desktop.cta-secondary != NULL }
 border-radius.px: 4
-background.solid: $inherited.colors.shadow
+background.solid: $inherited.colors.cta-secondary.base
 spacing.fixed.px: 16
 padding-horizontal.px: 50
 padding-vertical.px: 16
-background.solid if { featured-post-card-desktop.mouse-enter }: $inherited.colors.cta-primary.hover
+background.solid if { featured-post-card-desktop.mouse-enter }: $inherited.colors.cta-secondary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $featured-post-card-desktop.mouse-enter, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $featured-post-card-desktop.mouse-enter, v = false)
 

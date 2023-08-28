@@ -71,7 +71,7 @@ types: $typo.types
 
 -- theme.page.footer:
 
--- theme.footer-badge: Copyright © 2023 Aiglesoft Inc.
+-- theme.footer-badge: Copyright © 2023 Acme Inc.
 
 -- end: theme.page.footer
 
