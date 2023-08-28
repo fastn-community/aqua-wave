@@ -1454,22 +1454,17 @@ role: $inherited.types.heading-large
 
 -- end: ftd.row
 
--- ftd.column:
-width: fill-container
-margin-bottom.px: 32
-spacing.fixed.px: 32
-align-content: center
-
 -- ftd.text: 
 role: $inherited.types.copy-small
 color: $inherited.colors.text
+text-align: center
+margin-bottom.px: 32
 
 $pricing-card.body
 
 -- button-solid: $pricing-card.cta-text
 cta-link: $pricing-card.cta-link
 
--- end: ftd.column
 
 -- feature-loop: $obj.title
 active: $obj.active
@@ -4953,3 +4948,150 @@ cta-link: $hero-bottom-hug-expanded.primary-cta-link
 -- end: ftd.column
 
 -- end: hero-bottom-hug-expanded
+
+
+
+
+
+
+
+
+
+
+-- component logo-lists:
+optional caption title:
+optional ftd.image-src icon:
+optional body body:
+
+-- ftd.column:
+width.fixed.px: 362
+width if { ftd.device == "mobile" }: fill-container
+background.solid: $inherited.colors.background.base
+;;shadow: $shadow
+padding.px: 32
+spacing.fixed.px: 24
+
+-- ftd.column:
+height.fixed.px: 66
+width.fixed.px: 80
+border-top-right-radius.px: 24
+border-bottom-left-radius.px: 24
+background.solid: $inherited.colors.cta-primary.base
+align-content: center
+
+-- ftd.image:
+if: { logo-lists.icon != NULL }
+src: $logo-lists.icon
+width.fixed.px: 46
+
+-- end: ftd.column
+
+-- ftd.text: $logo-lists.title
+if: { logo-lists.title != NULL }
+role: $inherited.types.heading-medium
+color: $inherited.colors.text-strong
+
+-- ftd.text:
+if: { logo-lists.body != NULL }
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+$logo-lists.body
+
+-- end: ftd.column
+
+-- end: logo-lists
+
+
+
+
+
+
+
+
+
+
+-- component hero-right-hug-expanded:
+optional caption title:
+optional body body:
+optional ftd.image-src image:
+optional string primary-cta:
+optional string primary-cta-link: index.html
+optional ftd.image-src primary-cta-icon: $assets.files.assets.check-solid.svg
+optional string cta-secondary:
+optional string cta-secondary-link: index.html
+optional ftd.image-src cta-secondary-icon: $assets.files.assets.check-solid.svg
+optional string error-message:
+optional string input-placeholder:
+
+-- ftd.row:
+width: fill-container
+align-content: center
+padding-horizontal.px if { ftd.device == "mobile" }: 20
+padding-vertical.px: 49
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+wrap: true
+spacing: space-between
+
+-- ftd.column:
+width.fixed.percent: 45
+width if { ftd.device == "mobile" }: fill-container
+color: $inherited.colors.text
+spacing.fixed.px: 16
+align-self: center
+
+-- ftd.text: $hero-right-hug-expanded.title
+if: { hero-right-hug-expanded.title != NULL }
+role: $inherited.types.heading-hero
+color: $inherited.colors.text-strong
+
+-- ftd.text:
+if: { hero-right-hug-expanded.body != NULL }
+role: $inherited.types.copy-regular
+max-width.fixed.percent: 70
+
+$hero-right-hug-expanded.body
+
+-- ftd.row:
+spacing.fixed.px: 12
+margin-top.px: 10
+
+-- button-solid: $hero-right-hug-expanded.primary-cta
+if: { hero-right-hug-expanded.primary-cta != NULL }
+cta-link: $hero-right-hug-expanded.primary-cta-link
+src: $hero-right-hug-expanded.primary-cta-icon
+
+-- button-solid: $hero-right-hug-expanded.cta-secondary
+if: { hero-right-hug-expanded.cta-secondary != NULL }
+cta-link: $hero-right-hug-expanded.cta-secondary-link
+src: $hero-right-hug-expanded.cta-secondary-icon
+
+-- end: ftd.row
+
+-- ftd.text: $hero-right-hug-expanded.error-message
+if: { hero-right-hug-expanded.error-message != NULL }
+role: $inherited.types.copy-small
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.percent: 50
+width if { ftd.device == "mobile" }: fill-container
+align-self: center
+margin-vertical.px if { ftd.device == "mobile" }: 30
+
+-- ftd.image:
+if: { hero-right-hug-expanded.image != NULL }
+width: fill-container
+src: $hero-right-hug-expanded.image
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: hero-right-hug-expanded
