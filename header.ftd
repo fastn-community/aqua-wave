@@ -144,11 +144,10 @@ max-width.fixed.px: 1440
 width: fill-container
 padding-vertical.px: 20
 align-content: center
+spacing: space-between
 
 -- ftd.row:
-width: fill-container
 link: $header-desktop.site-url
-align-content: left
 
 -- ftd.image:
 if: { header-desktop.site-logo != NULL }
@@ -170,11 +169,14 @@ site-name: $header-desktop.site-name
 
 -- end: ftd.row
 
--- ftd.row: 
-width: fill-container
-align-content: right
+-- ftd.row:
+align-content: center
+spacing.fixed.px: 4
+
+-- ftd.row:
+
+-- ftd.row:
 spacing.fixed.px: 32
-margin-left.px: 24
 
 -- header-item: $obj.title
 $loop$: $header-desktop.sections as $obj
@@ -184,11 +186,7 @@ is-active: $obj.is-active
 -- end: ftd.row
 
 -- ftd.row:
-width: fill-container
-
--- ftd.row:
 if: { header-desktop.login-button }
-width: fill-container
 align-content: right
 
 -- login-signup:
@@ -203,10 +201,6 @@ github-url: $header-desktop.github-url
 
 -- end: ftd.row
 
--- ftd.row:
-align-content: center
-spacing.fixed.px: 4
-
 -- ftd.image:
 if: { ftd.dark-mode }
 src: $assets.files.assets.light-icon.svg
@@ -215,6 +209,7 @@ height.fixed.px: 28
 background.solid if { header-desktop.mouse-in }: #CCC
 border-radius.px: 100
 padding.px: 2
+margin-left.px: 32
 $on-click$: $ftd.enable-light-mode()
 $on-mouse-enter$: $ftd.set-bool($a = $header-desktop.mouse-in, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $header-desktop.mouse-in, v = false)
@@ -227,6 +222,7 @@ height.fixed.px: 28
 background.solid if { header-desktop.mouse-in }: #CCC
 border-radius.px: 100
 padding.px: 2
+margin-left.px: 48
 $on-mouse-enter$: $ftd.set-bool($a = $header-desktop.mouse-in, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $header-desktop.mouse-in, v = false)
 $on-click$: $ftd.enable-dark-mode()
@@ -237,7 +233,6 @@ $on-click$: $ftd.enable-dark-mode()
 
 -- ftd.row:
 if: { header-desktop.breadcrumb }
-width: fill-container
 padding-top.px: 20
 padding-bottom.px: 32
 align-content: center
@@ -286,7 +281,6 @@ align-self: center
 -- end: ftd.row
 
 -- ftd.row:
-width: hug-content
 align-content: center
 spacing.fixed.px: 32
 
