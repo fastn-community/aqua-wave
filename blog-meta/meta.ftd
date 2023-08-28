@@ -3,6 +3,7 @@
 -- common.post-meta meta: Keep your files safe with Martex
 post-image: $assets.files.assets.post2.jpg
 author: $patrica.patrica
+image: $assets.files.assets.avatar.png
 post-url: blog-articles/sample-post-1/
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
@@ -35,5 +36,6 @@ Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
 -- common.post-meta meta4: New product launch event
 post-image: $assets.files.assets.featured.jpg
 post-url: blog-articles/sample-post-1/
+author: $patrica.patrica
 
 Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
