@@ -3598,6 +3598,7 @@ $banner-card-list.body
 caption title:
 body body:
 common.feature list features:
+optional string tag:
 string id: features-card
 
 -- ftd.column:
