@@ -1,16 +1,16 @@
 -- import: fastn
 
--- fastn.package: fastn-community.github.io/webify-theme
-favicon: /-/fastn-community.github.io/webify-theme/favicon.ico
+-- fastn.package: fastn-community.github.io/aqua-wave
+favicon: /-/fastn-community.github.io/aqua-wave/favicon.ico
 
 -- fastn.dependency: fastn-community.github.io/blue-violet-cs as cs
 -- fastn.dependency: fastn-community.github.io/roboto-typography as typo
 -- fastn.dependency: fastn-community.github.io/typography
--- fastn.dependency: fastn-community.github.io/webify-theme
+-- fastn.dependency: fastn-community.github.io/aqua-wave
 
--- fastn.auto-import: fastn-community.github.io/webify-theme/FASTN/ws
--- fastn.auto-import: fastn-community.github.io/webify-theme/assets
--- fastn.auto-import: fastn-community.github.io/webify-theme/common
+-- fastn.auto-import: fastn-community.github.io/aqua-wave/FASTN/ws
+-- fastn.auto-import: fastn-community.github.io/aqua-wave/assets
+-- fastn.auto-import: fastn-community.github.io/aqua-wave/common
 
 -- fastn.sitemap:
 

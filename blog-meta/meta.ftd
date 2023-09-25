@@ -1,4 +1,4 @@
--- import: fastn-community.github.io/webify-theme/blog-meta/patrica
+-- import: fastn-community.github.io/aqua-wave/blog-meta/patrica
 
 -- common.post-meta meta: Keep your files safe with Martex
 post-image: $assets.files.assets.post2.jpg
