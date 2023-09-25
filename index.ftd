@@ -1,6 +1,6 @@
 -- import: fastn/processors as pr
--- import: fastn-community.github.io/webify-theme/blog-meta/meta
--- import: fastn-community.github.io/webify-theme/header as h
+-- import: fastn-community.github.io/aqua-wave/blog-meta/meta
+-- import: fastn-community.github.io/aqua-wave/header as h
 -- import: fastn-community.github.io/typography
 export: markdown, h0, h1, h2, h3
 
