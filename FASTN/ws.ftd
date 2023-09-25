@@ -1,7 +1,7 @@
 -- import: cs
 -- import: typo
--- import: fastn-community.github.io/webify-theme/tnc
--- import: fastn-community.github.io/webify-theme as theme
+-- import: fastn-community.github.io/aqua-wave/tnc
+-- import: fastn-community.github.io/aqua-wave as theme
 export: footer-badge, logo-cloud, content, banner-card, testimonials-card, features-card, faqs, tc-popup, tc-item, tc-item-item, featured-post, posts, h2, h3, markdown, post-card, post, image, row-container, contact-form, iframe, pricing, pricing-card, client-card, cta-left-hug, cta-right-hug, banner-card, team, member, hero-bottom-hug, author-bio, search-card, testimonials, articles, blog, hero-bottom-hug-expanded, contact-us, hero-right-hug-expanded
 exposing: markdown, post, h3 
 
